@@ -17,7 +17,7 @@ dat$datatime <- with(dat,
                      as.POSIXct(strptime(paste(Date,Time),"%d/%m/%Y %H:%M:%S")))
 
 #setting device
-png("plot3.png")
+png("plot3.png", bg="transparent")
 
 #creating plot without points and lines (only axes and titles)
 with(dat,plot(datatime,Sub_metering_1,type="n", ylab="Energy sub metering", xlab=""))

@@ -9,7 +9,7 @@ dat  <-read.csv("./sample.txt",
                 sep = ";")
 
 #setting device
-png("plot1.png")
+png("plot1.png", bg="transparent")
 
 #plotting histogram
 hist(dat$Global_active_power, 

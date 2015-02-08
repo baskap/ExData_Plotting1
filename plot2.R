@@ -17,7 +17,7 @@ dat$datatime <- with(dat,
                      as.POSIXct(strptime(paste(Date,Time),"%d/%m/%Y %H:%M:%S")))
 
 #setting device
-png("plot2.png")
+png("plot2.png", bg="transparent")
 
 #plotting chart
 with(dat,plot(datatime,
